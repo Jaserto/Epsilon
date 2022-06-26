@@ -8,5 +8,9 @@ app.get("/health", (req, res) => {
     res.status(200).send({ status: 'OK' })
 })
 
+app.get("/workouts", (req, res) => {
+    res.status(200).send({ status: 'OK' })
+})
+
 
 export { app }

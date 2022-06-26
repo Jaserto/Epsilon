@@ -30,9 +30,7 @@ const Header = () => {
   return (
     <Wrapper>
       <LogoWrapper>
-        <Link to='/'>
           <Epsilon width="80" height="60"/>
-        </Link>
       </LogoWrapper>
       <ActionsWrapper>
         <Actions />

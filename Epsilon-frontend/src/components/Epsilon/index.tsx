@@ -8,8 +8,8 @@ export const Epsilon=(props:any)=>{
       <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 149.05 58.17" {...props} alt="Epsilon Logo">
   <defs>
     <linearGradient id="Degradado_sin_nombre_4" data-name="Degradado sin nombre 4" x1="35.7" y1="30.5" x2="67" y2="30.5" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0071bc"/>
-      <stop offset="1" stop-color="#2e3192"/>
+      <stop offset="0" stopColor="#0071bc"/>
+      <stop offset="1" stopColor="#2e3192"/>
     </linearGradient>
   </defs>
   <title>epsilon</title>

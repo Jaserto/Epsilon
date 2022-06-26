@@ -68,7 +68,7 @@ const userProps = {
   avatar: img
 }
 
-const textNotification = `Notificacion prueba`
+const textNotification = `Notificacion prueba...`
 const ShapeIcon = (): object => {
   return (
     <svg

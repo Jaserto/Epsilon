@@ -62,17 +62,17 @@ interface IItemProps {
 
 const Item: React.FC<IItemProps> = props => {
   const { icon, name, link } = props
-console.log(icon);
+  //error 204
   return (
     <Wrapper>
       <NavLink to={link} className={(navData) => navData.isActive ? "active" : "" }>
       <Icon>
-        {name==="Dashboard" && <MdOutlineSpaceDashboard size={"2.4rem"}/>}
-        {name==="Messages" && <MdOutlineMessage size={"2.4rem"}/>}
-        {name==="Workouts" && <MdStickyNote2 size={"2.4rem"}/>}
-        {name==="Schedule" && <MdWysiwyg size={"2.4rem"} />}
-        {name==="Activity" && <MdTune size={"2.4rem"}/>}
-        {name==="Settings" && <MdSettings size={"2.4rem"}/>}
+        {name==="Dashboard" && <MdOutlineSpaceDashboard />}
+        {name==="Messages" && <MdOutlineMessage />}
+        {name==="Workouts" && <MdStickyNote2 />}
+        {name==="Schedule" && <MdWysiwyg  />}
+        {name==="Activity" && <MdTune />}
+        {name==="Settings" && <MdSettings />}
       </Icon>
         {/* <Icon>{icon}</Icon> */}
         <NameLink>{name}</NameLink>

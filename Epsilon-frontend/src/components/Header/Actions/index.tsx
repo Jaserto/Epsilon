@@ -27,7 +27,7 @@ const userProps = {
 
 
 const Actions = () => {
-  console.log(userProps);
+  //console.log(userProps);
   return (
     <Wrapper>
       <ActionsButton />
