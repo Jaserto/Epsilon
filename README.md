@@ -1,5 +1,7 @@
 <h1 align="center">Epsilon</h1>
 
+<img src="https://img.shields.io/badge/License-GPL-red.svg?style=for-the-badge" />
+
 ## Screenshots
 
 ![](screenshots/screenshot1.png)
