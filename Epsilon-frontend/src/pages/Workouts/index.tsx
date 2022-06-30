@@ -62,7 +62,9 @@ min-width: 250px;
 
 .caja{
   height:fit-content;
-  width:50%;
+  width:auto;
+  display:flex;
+  flex-direction:column;
   padding:15px;
   background-color:#0062ff;
   border-radius:10px;
@@ -77,13 +79,7 @@ return (
         <Sidebar />
         <Content>
         <h1>Workouts</h1>
-            <Box>
-              <div className="caja">
-                <h3>New Workout</h3>
-                <NewWorkoutForm />
-              </div>
-            </Box>
-         
+            <NewWorkoutForm />
         </Content>
     </Wrapper>
   </>
