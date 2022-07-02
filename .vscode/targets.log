@@ -1,73 +1,143 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.3
-# Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2020 Free Software Foundation, Inc.
-# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-# This is free software: you are free to change and redistribute it.
-# There is NO WARRANTY, to the extent permitted by law.
+make: *** No rule to make target 'all'.  Stop.
 
-# Make data base, printed on Thu Jun 30 23:19:37 2022
+# GNU Make 4.3
+ 
+# Built for x86_64-pc-linux-gnu
+ 
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+ 
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
+# This is free software: you are free to change and redistribute it.
+ 
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+ 
+# Make data base, printed on Sat Jul  2 11:55:22 2022
+ 
 
 # Variables
+ 
 
+ 
 # environment
+ 
 GDK_BACKEND = x11
+ 
 # environment
+ 
 LC_ALL = C
+ 
 # environment
+ 
 GNOME_SHELL_SESSION_MODE = ubuntu
+ 
 # environment
+ 
 SSH_AGENT_LAUNCHER = gnome-keyring
+ 
 # environment
+ 
 SNAP_INSTANCE_KEY = 
+ 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-06c09f37-0297-479f-bdd4-ff436ea3287e.sock
+ 
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-dc5ec114-e31e-4447-84fe-745f7a30ab48.sock
+ 
 # environment
+ 
 VSCODE_CWD = /home/kalium/Escritorio/javi/Epsilon
+ 
 # default
+ 
 MAKE_COMMAND := make
+ 
 # environment
+ 
 QT_ACCESSIBILITY = 1
+ 
 # automatic
+ 
 @D = $(patsubst %/,%,$(dir $@))
+ 
 # environment
+ 
 SNAP_INSTANCE_NAME = code
+ 
 # environment
+ 
 GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+ 
 # environment
+ 
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+ 
 # default
+ 
 .VARIABLES := 
+ 
 # environment
+ 
 PWD = /home/kalium/Escritorio/javi/Epsilon
+ 
 # automatic
+ 
 %D = $(patsubst %/,%,$(dir $%))
+ 
 # environment
+ 
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+ 
 # environment
-OLDPWD = /home/kalium/Escritorio/javi
+ 
+OLDPWD = /home/kalium/Escritorio/javi/Epsilon/Epsilon-frontend
+ 
 # automatic
+ 
 ^D = $(patsubst %/,%,$(dir $^))
+ 
 # environment
+ 
 VSCODE_LOG_STACK = false
+ 
 # automatic
+ 
 %F = $(notdir $%)
+ 
 # environment
+ 
 VSCODE_CODE_CACHE_PATH = /home/kalium/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+ 
 # environment
+ 
 LANG = C
+ 
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.M0V5N1
+ 
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.5U6PO1
+ 
 # default
+ 
 .LOADED := 
+ 
 # default
+ 
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+ 
 # environment
-GNOME_TERMINAL_SERVICE = :1.177
+ 
+GNOME_TERMINAL_SERVICE = :1.131
+ 
 # makefile
+ 
 MAKEFLAGS = pqrR
+ 
 # makefile
+ 
 CURDIR := /home/kalium/Escritorio/javi/Epsilon
+ 
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -99,13 +169,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 18646
+VSCODE_PID = 23565
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/kalium-VirtualBox:@/tmp/.ICE-unix/2310,unix/kalium-VirtualBox:/tmp/.ICE-unix/2310
+SESSION_MANAGER = local/kalium-VirtualBox:@/tmp/.ICE-unix/18816,unix/kalium-VirtualBox:/tmp/.ICE-unix/18816
 # automatic
 *F = $(notdir $*)
 # environment
@@ -129,7 +199,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/4198b1fb_3809_4f2b_82e1_82d93d7f3496
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b79589d4_b2d6_45fc_8d61_1b6ec63714a4
 # environment
 MAKELEVEL := 0
 # default
@@ -179,7 +249,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := dev
 # environment
-SYSTEMD_EXEC_PID = 2329
+SYSTEMD_EXEC_PID = 23327
 # environment
 DISPLAY = :0
 # environment
@@ -278,9 +348,6 @@ Makefile:
 
 stop:
 #  Implicit rule search has not been done.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 7):
@@ -320,6 +387,6 @@ all:
 # strcache performance: lookups = 27 / hit rate = 22%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=0/27=0%
-# Finished Make data base on Thu Jun 30 23:19:37 2022
+# Finished Make data base on Sat Jul  2 11:55:22 2022
 
  

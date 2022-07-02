@@ -110,25 +110,32 @@ return (
         <Content>
         <h1>Settings</h1>
             <Box>
-              <div className="image">
-                <img src={imgg} alt="" />
-                <span>Allowed *.jpeg, *.jpg, *.png, *.gif max size of 3.1 MB</span>
-              </div>
               <div className="data">
-                <span>Name:</span>
+                <span>Unit System:</span>
                 <Input />
-                <span>Lastname:</span>
+                <span>Calendar week Start:</span>
                 <Input />
-                <span>Username:</span>
+                <span>Default Weight Increment:</span>
                 <Input />
-                <span>Email address:</span>
+                <span>Track personal records:</span>
                 <Input />
               </div>
             </Box>
-          <h3>Notifications</h3>
+          <h3>Data</h3>
           <NotificationBox>
-            <span>Activity</span>
-            <span>Application</span>
+            <span>Back up</span>
+            <span>Restore</span>
+            <span>Spreadsheet Export</span>
+            <span>Calculate personal records</span>
+            <span>Delete workout History</span>
+          </NotificationBox>
+          <h3>Other</h3>
+          <NotificationBox>
+            <span>Rate Epsilon</span>
+            <span>Feedback</span>
+            <span>Twitter</span>
+            <span>Show tutorials</span>
+            <span>Privacy Policy</span>
           </NotificationBox>
         </Content>
     </Wrapper>
