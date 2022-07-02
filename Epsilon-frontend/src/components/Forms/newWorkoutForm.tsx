@@ -15,25 +15,12 @@ export const NewWorkoutForm = () => {
   const [reps, setReps] = useState<string>('')
   const [weight, setWeight] = useState<string>('')
   const [series, setSeries] = useState<string>('')
-  const [author, setAuthor] = useState<string>('62b231e44f020b1c9f2be342');
+  const [author, setAuthor] = useState<string>('62c07e976aaa93b42994228a');
 	const [error, setError] = useState('');
 	const [success, setSuccess] = useState('');
 
 
-  const handleSubmit2 = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    let workout = {
-      muscularGroup, exercise, reps, weight, series, author
-    }
-    createWorkout({ variables: { workout } })
 
-    setMuscularGroup('')
-    setExercise('')
-    setReps('')
-    setWeight('')
-    setSeries('')
-    setAuthor('62b231e44f020b1c9f2be342')
-  }
 
   const [createWorkout] = useMutation(CREATE_WORKOUT)
 
@@ -60,7 +47,7 @@ export const NewWorkoutForm = () => {
     setWeight('')
     setSeries('')
 	setError('')
-    setAuthor('62b231e44f020b1c9f2be342')
+    setAuthor('62c07e976aaa93b42994228a')
 	setSuccess('Workout created!');
 
 	

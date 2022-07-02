@@ -9,7 +9,6 @@ type Workout implements Timestamps {
   author: User!
   estado: Boolean
 
-
   # Interface required
   createdAt: Date!
   updatedAt: Date!

@@ -26,11 +26,6 @@ const itemsData = [
     link: '/dashboard'
   },
   {
-    name: 'Messages',
-    icon: <MdOutlineSpaceDashboard />,
-    link: '/messages'
-  },
-  {
     name: 'Workouts',
     icon: <MdOutlineSpaceDashboard />,
     link: '/workouts'
@@ -64,9 +59,7 @@ const items = itemsData.map((item: IItemProps, idx: number): object => (
 
 const Menu = () => {
   return (
-   
       <Wrapper>{items}</Wrapper>
-
   )
 }
 

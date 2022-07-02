@@ -5,7 +5,6 @@ import { Epsilon } from '../../components/Epsilon';
 import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
 import { PollIntervals } from '../../constants';
-import { QUERY_USERS } from '../../graphql/query';
 import client from 'src/graphql/client';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { useState } from 'react';
@@ -16,17 +15,6 @@ import { NewWorkoutForm } from '../../components/Forms/newWorkoutForm'
 export const Workouts = () => {
 
   const history = useNavigate();
-  
-
- // const { data, loading, error } = useQuery(QUERY_USERS,{
-    //    variables: { userId: user.id },
-   //     pollInterval: PollIntervals.profile,
-     //   fetchPolicy: 'network-only'
-    //  });
-    
-   //  console.log(data?.users);
-
-
 
 
   const Wrapper = styled.section`

@@ -1,10 +1,19 @@
-import React from 'react'
 import styled from 'styled-components'
 import faker from 'faker';
 import Title from './title'
 import { Chart as ChartJS,Title as title,LineElement,CategoryScale,LinearScale,PointElement, ArcElement, Tooltip, Legend } from 'chart.js';
 
 import { Doughnut, Line } from 'react-chartjs-2';
+import { useQuery } from '@apollo/react-hooks';
+import { QUERY_WORKOUT_AUTHOR } from '../../../../src/graphql/query/index';
+
+const user={
+  id: "62c07e976aaa93b42994228a",
+  username:'Javi'
+}
+
+
+
 
 const Wrapper = styled.section`
   display: flex;
@@ -105,7 +114,7 @@ const BoxWeight = styled.div`
 `
 ChartJS.register(CategoryScale,LineElement,title,PointElement,ArcElement,LinearScale, Tooltip, Legend);
 
-export const data = {
+export const data1 = {
   labels: ['Weight', 'Gym', 'Running'],
   datasets: [
     {
@@ -166,6 +175,19 @@ export const options = {
 
 
 const Content = () => {
+
+
+  const arrayInt:any=[]
+  const { data, loading, error } = useQuery(QUERY_WORKOUT_AUTHOR,{
+    variables: { workoutWeightId: "62c07e976aaa93b42994228a" },
+    fetchPolicy: 'network-only'
+  });
+
+console.log( data?.workoutWeight)
+ data?.workoutWeight.map((x:any) => arrayInt.push(parseInt(x.weight)));
+ let total = arrayInt.reduce((a:number, b:number) => a + b, 0);
+  let date = new Date (data?.workoutWeight[0].createdAt)
+
   const labels2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   const data2 = {
     labels2,
@@ -196,7 +218,10 @@ const Content = () => {
                 <h2>
                   Total Weight lifted Today
                 </h2>
-                <span>18,000 kgs</span>
+                {loading ? <span>Cargando...</span>
+                :
+                <span>109 kgs</span>
+                }
             </Box>
             <Box>
             <h2>
@@ -208,7 +233,10 @@ const Content = () => {
                 <h2>
                   Total Weight lifted this month
                 </h2>
-                <span>929,000 kgs</span>
+                {loading ? <span>Cargando...</span>
+                :
+                <span>{total} kgs</span>
+                }
             </Box>
         </ContentBoxes>
         <ContentBoxWeight>
@@ -217,7 +245,7 @@ const Content = () => {
                   Workout type
                 </h2>
                 <div className="center">
-                  <Doughnut data={data} width={300} height={240} options={{maintainAspectRatio: false,responsive:false}} />
+                  <Doughnut data={data2} width={300} height={240} options={{maintainAspectRatio: false,responsive:false}} />
                 </div>
             </BoxWeight>
             <BoxWeight>
@@ -231,16 +259,16 @@ const Content = () => {
           <h2>Latest workouts</h2>
             <div className="workoutsLine">
               <div>
-                6  Monday, March 
+              { date.toLocaleDateString('en-US')}
               </div>
               <span>
-                  Total Sets 34
+                  Total Sets {data?.workoutWeight[0].series}
               </span>
               <span>
-                  Total Reps 121
+                  Total Reps {data?.workoutWeight[0].reps}
               </span>
               <span>
-                  Total Volume 7.000 kg
+                  Total Volume { total } kgs
               </span>
             </div>
         </LatestWorkouts>
