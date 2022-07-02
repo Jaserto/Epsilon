@@ -256,21 +256,23 @@ console.log( data?.workoutWeight)
             </BoxWeight>
         </ContentBoxWeight>
         <LatestWorkouts>
-          <h2>Latest workouts</h2>
+          <h2>Latest workouts - {data?.workoutWeight.length} Workouts</h2>
+          {data?.workoutWeight.map((workout:any) => (
             <div className="workoutsLine">
               <div>
-              { date.toLocaleDateString('en-US')}
+              {  new Date (workout.createdAt).toLocaleDateString('en-US')}
               </div>
               <span>
-                  Total Sets {data?.workoutWeight[0].series}
+                  Total Sets {workout.series}
               </span>
               <span>
-                  Total Reps {data?.workoutWeight[0].reps}
+                  Total Reps {workout.reps}
               </span>
               <span>
                   Total Volume { total } kgs
               </span>
-            </div>
+            </div> 
+               ))}
         </LatestWorkouts>
     </Wrapper>
   )
