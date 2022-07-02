@@ -28,6 +28,7 @@
     "react-icons": "^4.3.1",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
+    "recharts": "^2.1.12",
     "styled-components": "^5.3.3",
     "styled-system": "^5.1.5"
   },

@@ -14,6 +14,7 @@ export const QUERY_USER = gql`
 export const QUERY_WORKOUT_AUTHOR = gql`
 query WorkoutWeight($workoutWeightId: ID!) {
   workoutWeight(id: $workoutWeightId) {
+    id
     reps
     series
     weight
