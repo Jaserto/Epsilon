@@ -22,17 +22,17 @@ export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
   const isLight = theme.isLight;
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem("@letmeask/nlwtheme");
+    const localTheme = window.localStorage.getItem("@epsilon/nlwtheme");
 
     localTheme && setTheme(JSON.parse(localTheme));
   }, []);
 
   const toggleTheme = () => {
     if (isLight) {
-      window.localStorage.setItem("@letmeask/nlwtheme", JSON.stringify(dark));
+      window.localStorage.setItem("@epsilon/nlwtheme", JSON.stringify(dark));
       setTheme(dark);
     } else {
-      window.localStorage.setItem("@letmeask/nlwtheme", JSON.stringify(light));
+      window.localStorage.setItem("@epsilon/nlwtheme", JSON.stringify(light));
       setTheme(light);
     }
   };

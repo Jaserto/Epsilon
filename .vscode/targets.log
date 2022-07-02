@@ -2,142 +2,74 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.3
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
- 
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
- 
-# Make data base, printed on Sat Jul  2 11:55:22 2022
- 
+# Make data base, printed on Sat Jul  2 13:34:00 2022
 
 # Variables
- 
 
- 
 # environment
- 
 GDK_BACKEND = x11
- 
 # environment
- 
 LC_ALL = C
- 
 # environment
- 
 GNOME_SHELL_SESSION_MODE = ubuntu
- 
 # environment
- 
 SSH_AGENT_LAUNCHER = gnome-keyring
- 
 # environment
- 
 SNAP_INSTANCE_KEY = 
- 
 # environment
- 
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-dc5ec114-e31e-4447-84fe-745f7a30ab48.sock
- 
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-99d736ae-e68d-443d-beec-b9bd171cb50e.sock
 # environment
- 
 VSCODE_CWD = /home/kalium/Escritorio/javi/Epsilon
- 
 # default
- 
 MAKE_COMMAND := make
- 
 # environment
- 
 QT_ACCESSIBILITY = 1
- 
 # automatic
- 
 @D = $(patsubst %/,%,$(dir $@))
- 
 # environment
- 
 SNAP_INSTANCE_NAME = code
- 
 # environment
- 
 GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
- 
 # environment
- 
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
- 
 # default
- 
 .VARIABLES := 
- 
 # environment
- 
 PWD = /home/kalium/Escritorio/javi/Epsilon
- 
 # automatic
- 
 %D = $(patsubst %/,%,$(dir $%))
- 
 # environment
- 
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
- 
 # environment
- 
 OLDPWD = /home/kalium/Escritorio/javi/Epsilon/Epsilon-frontend
- 
 # automatic
- 
 ^D = $(patsubst %/,%,$(dir $^))
- 
 # environment
- 
 VSCODE_LOG_STACK = false
- 
 # automatic
- 
 %F = $(notdir $%)
- 
 # environment
- 
 VSCODE_CODE_CACHE_PATH = /home/kalium/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
- 
 # environment
- 
 LANG = C
- 
 # environment
- 
 XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.5U6PO1
- 
 # default
- 
 .LOADED := 
- 
 # default
- 
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
- 
 # environment
- 
 GNOME_TERMINAL_SERVICE = :1.131
- 
 # makefile
- 
 MAKEFLAGS = pqrR
- 
 # makefile
- 
 CURDIR := /home/kalium/Escritorio/javi/Epsilon
- 
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -169,7 +101,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 23565
+VSCODE_PID = 39436
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -199,7 +131,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b79589d4_b2d6_45fc_8d61_1b6ec63714a4
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/d387b5ac_6d15_478b_ac9a_f223040d7126
 # environment
 MAKELEVEL := 0
 # default
@@ -329,7 +261,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2051, inode 13636649): 14 files, no impossibilities.
+# . (device 2051, inode 13633125): 14 files, no impossibilities.
 
 # 14 files, no impossibilities in 1 directories.
 
@@ -342,10 +274,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-20 21:10:48.72687391
+#  Last modified 2022-07-02 13:29:42.403040613
 #  File has been updated.
 #  Successfully updated.
 
+ 
 stop:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -387,6 +320,6 @@ all:
 # strcache performance: lookups = 27 / hit rate = 22%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=0/27=0%
-# Finished Make data base on Sat Jul  2 11:55:22 2022
+# Finished Make data base on Sat Jul  2 13:34:00 2022
 
  

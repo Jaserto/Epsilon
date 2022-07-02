@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components'
 import { Toast } from '../../components/Toast';
 import { Epsilon } from '../../components/Epsilon';
-import { ToggleTheme } from '../../components/ToggleTheme';
 import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
 import Content from '../../components/Main/Content'
@@ -11,8 +10,6 @@ import Content from '../../components/Main/Content'
 export const Schedule = () => {
 
   const history = useNavigate();
-  
-
 
 
 

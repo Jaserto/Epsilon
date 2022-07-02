@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import { Toast } from '../../components/Toast';
 import { Epsilon } from '../../components/Epsilon';
-import { ToggleTheme } from '../../components/ToggleTheme';
 import { Input } from '../../components/Input'
 import img from '../../assets/images/machines.png'
 import  Social from '../../components/Social'
@@ -20,8 +19,6 @@ export const Login = () => {
 
   return (
     <Styled.Container>
-
-
       <Styled.Left as="aside">
         <img src={img} width="250"/>
         <strong>Hi, Welcome back!</strong>

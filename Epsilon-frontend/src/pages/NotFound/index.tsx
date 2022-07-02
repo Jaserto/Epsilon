@@ -1,7 +1,6 @@
 import * as Styled from './styles';
 import { useNavigate } from 'react-router-dom';
 import { Toast } from '../../components/Toast';
-import { ToggleTheme } from '../../components/ToggleTheme';
 import { useEffect } from 'react';
 
 
