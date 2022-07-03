@@ -3,7 +3,11 @@ import bcrypt from "bcrypt";
 
 const UserSchema = new Schema(
   {
-    username: { type: String, required: true, unique: true },
+    username: { 
+      type: String, 
+      required: true, 
+      unique: true 
+    },
     password: {
       type: String,
       required: true,
@@ -12,7 +16,19 @@ const UserSchema = new Schema(
       default:true,
       type: Boolean,
       required: true
-    }
+    },
+    isBlocked: {
+      default:false,
+      type: Boolean,
+      required: true
+    },
+    google:{
+      type:Boolean,
+      default: false
+    },
+    image: {
+      type:String
+    },
   },
   {
     timestamps: true,

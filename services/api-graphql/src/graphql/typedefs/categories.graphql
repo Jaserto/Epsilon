@@ -1,13 +1,9 @@
 # Types
-type Categories implements Timestamps { 
+type muscularGroup implements Timestamps { 
   id: ID!
-  muscularGroup: String!
-  exercise: String!
-  weight: String!
-  reps: String
-  series: String
-  author: User!
-  estado: Boolean
+  name: String!
+  status: boolean!
+  user: ID!
 
 
   # Interface required

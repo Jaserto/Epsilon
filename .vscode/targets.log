@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jul  2 19:09:38 2022
+# Make data base, printed on Sun Jul  3 10:42:14 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-fa9931a0-016a-47f4-b331-57e55a6330dd.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-99fb5cb8-9854-498d-ba53-8430a1bc6d38.sock
 # environment
 VSCODE_CWD = /home/kalium/Escritorio/javi/Epsilon
 # default
@@ -47,7 +47,7 @@ PWD = /home/kalium/Escritorio/javi/Epsilon
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-OLDPWD = /home/kalium/Escritorio/javi
+OLDPWD = /home/kalium/Escritorio/javi/Epsilon/Epsilon-frontend
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -59,13 +59,13 @@ VSCODE_CODE_CACHE_PATH = /home/kalium/.config/Code/CachedData/30d9c6cd9483b2cc58
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.5U6PO1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.ME9WO1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.131
+GNOME_TERMINAL_SERVICE = :1.121
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -101,13 +101,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 66832
+VSCODE_PID = 16789
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/kalium-VirtualBox:@/tmp/.ICE-unix/18816,unix/kalium-VirtualBox:/tmp/.ICE-unix/18816
+SESSION_MANAGER = local/kalium-VirtualBox:@/tmp/.ICE-unix/2439,unix/kalium-VirtualBox:/tmp/.ICE-unix/2439
 # automatic
 *F = $(notdir $*)
 # environment
@@ -131,7 +131,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/d387b5ac_6d15_478b_ac9a_f223040d7126
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/774880d4_32e8_44a5_8249_349b0ca92451
 # environment
 MAKELEVEL := 0
 # default
@@ -181,7 +181,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := dev
 # environment
-SYSTEMD_EXEC_PID = 23327
+SYSTEMD_EXEC_PID = 6543
 # environment
 DISPLAY = :0
 # environment
@@ -261,9 +261,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2051, inode 13633125): 15 files, no impossibilities.
+# . (device 2051, inode 13633125): 14 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -314,12 +314,12 @@ all:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 196 B / avg = 8 B
-# current buf: size = 8162 B / used = 196 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 191 B / avg = 9 B
+# current buf: size = 8162 B / used = 191 B / count = 21 / avg = 9 B
 
-# strcache performance: lookups = 28 / hit rate = 21%
+# strcache performance: lookups = 27 / hit rate = 22%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/28=0%
-# Finished Make data base on Sat Jul  2 19:09:38 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/27=0%
+# Finished Make data base on Sun Jul  3 10:42:14 2022
 
  
