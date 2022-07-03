@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import faker from "faker";
 import Title from "./title";
-/* import { Chart as ChartJS,Title as title,LineElement,CategoryScale,LinearScale,PointElement, ArcElement, Tooltip, Legend } from 'chart.js';
- */
-import { Doughnut } from "react-chartjs-2";
 import { useQuery } from "@apollo/react-hooks";
 import { QUERY_WORKOUT_AUTHOR } from "../../../../src/graphql/query/index";
 import {
@@ -13,53 +10,9 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Radar,
-  RadarChart,
   Legend,
-  PolarAngleAxis,
-  PolarGrid,
-  PolarRadiusAxis,
   ResponsiveContainer,
 } from "recharts";
-
-const datos5 = [
-  {
-    subject: "Velocity",
-    A: 120,
-    B: 110,
-    fullMark: 150,
-  },
-  {
-    subject: "Flexibility",
-    A: 98,
-    B: 130,
-    fullMark: 150,
-  },
-  {
-    subject: "Coordination",
-    A: 86,
-    B: 130,
-    fullMark: 150,
-  },
-  {
-    subject: "Strenght",
-    A: 99,
-    B: 100,
-    fullMark: 150,
-  },
-  {
-    subject: "Physics",
-    A: 85,
-    B: 90,
-    fullMark: 150,
-  },
-  {
-    subject: "Resistance",
-    A: 65,
-    B: 85,
-    fullMark: 150,
-  },
-];
 
 const datos = [
   {
@@ -142,6 +95,8 @@ const Box = styled.div`
   width: 30%;
   border: 1px solid gray; 
   h2{
+    padding-bottom:10px;
+    border-bottom: 1px solid #2d4cff;
     font-size: 16px;
     color:${({ theme }: any) =>
       theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
@@ -186,13 +141,12 @@ const LatestWorkouts = styled.div`
   }
 `;
 const BoxWeight = styled.div`
-
   border-radius: 8px;
   box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
   width: 100%;
   padding: 20px;
-  height:auto;
+  height: auto;
   border: 1px solid gray;
   .center {
     display: flex;
@@ -201,7 +155,7 @@ const BoxWeight = styled.div`
   }
   h2 {
     font-size: 18px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     color: ${({ theme }: any) =>
       theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
   }
@@ -212,8 +166,7 @@ const BoxWeight = styled.div`
       theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
   }
 `;
-/* ChartJS.register(CategoryScale,LineElement,title,PointElement,ArcElement,LinearScale, Tooltip, Legend);
- */
+
 export const data1 = {
   labels: ["Weight", "Gym", "Running"],
   datasets: [
@@ -241,36 +194,6 @@ export const data1 = {
   ],
 };
 
-export const options = {
-  responsive: true,
-  interaction: {
-    mode: "index" as const,
-    intersect: false,
-  },
-  stacked: false,
-  plugins: {
-    title: {
-      display: true,
-      text: "Strenght & Resistance",
-    },
-  },
-  scales: {
-    y: {
-      type: "linear" as const,
-      display: true,
-      position: "left" as const,
-    },
-    y1: {
-      type: "linear" as const,
-      display: true,
-      position: "right" as const,
-      grid: {
-        drawOnChartArea: false,
-      },
-    },
-  },
-};
-
 const Content = () => {
   const arrayInt: any = [];
   const { data, loading, error } = useQuery(QUERY_WORKOUT_AUTHOR, {
@@ -283,34 +206,6 @@ const Content = () => {
   let total = arrayInt.reduce((a: number, b: number) => a + b, 0);
   let date = new Date(data?.workoutWeight[0].createdAt);
 
-  const labels2 = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-  ];
-  const data2 = {
-    labels2,
-    datasets: [
-      {
-        label: "Strenght",
-        data: labels2.map(() => faker.datatype.number({ min: -800, max: 800 })),
-        borderColor: "rgb(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-        yAxisID: "y",
-      },
-      {
-        label: "Resistance",
-        data: labels2.map(() => faker.datatype.number({ min: -800, max: 800 })),
-        borderColor: "rgb(53, 162, 235)",
-        backgroundColor: "rgba(53, 162, 235, 0.5)",
-        yAxisID: "y1",
-      },
-    ],
-  };
   return (
     <Wrapper>
       <Welcome>
@@ -331,35 +226,9 @@ const Content = () => {
         </Box>
       </ContentBoxes>
       <ContentBoxWeight>
-       {/*  <BoxWeight>
-          <h2>Workout type</h2>
-          <ResponsiveContainer width="100%" height="100%">
-            <RadarChart
-              cx={120}
-              cy={142}
-              outerRadius={75}
-              width={250}
-              height={250}
-              data={datos5}
-            >
-              <PolarGrid />
-              <PolarAngleAxis dataKey="subject" />
-              <PolarRadiusAxis />
-              <Radar
-                name="Mike"
-                dataKey="A"
-                stroke="#8884d8"
-                fill="#8884d8"
-                fillOpacity={0.6}
-              />
-            </RadarChart>
-            </ResponsiveContainer>
-              <Doughnut data={data2} width={300} height={240} options={{maintainAspectRatio: false,responsive:false}} />
-         
-        </BoxWeight> */}
         <BoxWeight>
           <h2>Strenght progression</h2>
-          {/*   <Line options={options} data={data2} /> */}
+
           <ResponsiveContainer width="100%" height="100%">
             <LineChart
               width={500}
@@ -380,10 +249,11 @@ const Content = () => {
               <Line
                 type="monotone"
                 dataKey="pv"
-                stroke="#8884d8"
+                stroke="#eceeff"
                 activeDot={{ r: 8 }}
               />
-              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+              <Line type="monotone" dataKey="uv" stroke="#8f9fff" />
+              <Line type="monotone" dataKey="amt" stroke="#2d4cff" />
             </LineChart>
           </ResponsiveContainer>
         </BoxWeight>
