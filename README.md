@@ -5,7 +5,7 @@
 ## Screenshots
 
 ![](screenshots/screenshot1.png)
-![](screenshots/screenshot2.png)
+![](screenshots/screenshoot2.png)
 
 
 <p align="center">
