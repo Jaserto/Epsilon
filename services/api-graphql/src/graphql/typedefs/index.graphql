@@ -14,12 +14,12 @@ type Query {
   workoutsCount: Int
 
   #MuscularGroup
-"""   name: String!
-  status: Boolean
-  author: String! """
+
   muscularGroups: [MuscularGroup]!
   muscularGroup(id: ID!):MuscularGroup
-  
+  muscularGroupAuthor(id: ID!): [MuscularGroup]
+  muscularGroupCount: Int
+
 }
 
 type Mutation {

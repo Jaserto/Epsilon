@@ -12,13 +12,10 @@ const ExerciseSchema = new Schema(
         ref: "MuscularGroup",
         required:true,
       },
-      exercise: {
-        type: String,
-        required: true
-      },
       status: {
         type: Boolean,
-        trim:true
+        trim:true,
+        default: true,
       },
       author: {
         type: Schema.Types.ObjectId,

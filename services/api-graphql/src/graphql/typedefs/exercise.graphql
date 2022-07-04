@@ -1,0 +1,27 @@
+# Types
+type Exercise implements Timestamps { 
+  id: ID!
+  name: String!
+  muscularGroup: String!
+  author: User!
+  status: Boolean
+
+  # Interface required
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+
+# Inputs
+input ExerciseCreateInput {
+  name: String!
+  muscularGroup: String!
+  author: String!
+}
+
+input ExerciseUpdateInput {
+  id: ID!
+  muscularGroup: String!
+  author: String!
+  status: Boolean
+}
