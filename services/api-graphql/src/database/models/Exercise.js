@@ -4,7 +4,8 @@ const ExerciseSchema = new Schema(
     {
       name: { 
         type: String, 
-        required: true, 
+        required: true,
+        unique:true
       },
       muscularGroup: {
         type: Schema.Types.ObjectId,
@@ -19,7 +20,7 @@ const ExerciseSchema = new Schema(
         type: Boolean,
         trim:true
       },
-      user: {
+      author: {
         type: Schema.Types.ObjectId,
         trim:true,
         ref: 'User'

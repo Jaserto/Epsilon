@@ -12,6 +12,14 @@ type Query {
   workout(id: ID!): Workout
   workoutWeight(id: ID!): [Workout]
   workoutsCount: Int
+
+  #MuscularGroup
+"""   name: String!
+  status: Boolean
+  author: String! """
+  muscularGroups: [MuscularGroup]!
+  muscularGroup(id: ID!):MuscularGroup
+  
 }
 
 type Mutation {
@@ -22,4 +30,8 @@ type Mutation {
   #Workout
   createWorkout(workout: WorkoutCreateInput!): Workout!
   updateWorkout(id: ID!, workout: WorkoutUpdateInput!): Workout!
+
+  #muscularGroup
+  createMuscularGroup(muscularGroup: MuscularGroupCreateInput!): MuscularGroup!
+  updateMuscularGroup(id: ID!, muscularGroup: MuscularGroupUpdateInput!): MuscularGroup!
 }

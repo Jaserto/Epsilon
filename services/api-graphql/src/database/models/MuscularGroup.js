@@ -11,7 +11,7 @@ const MuscularGroupSchema = new Schema(
         type: Boolean,
         trim:true
       },
-      user: {
+      author: {
         type: Schema.Types.ObjectId,
         trim:true,
         ref: 'User'

@@ -25,9 +25,11 @@ input WorkoutCreateInput {
 }
 
 input WorkoutUpdateInput {
+  id: ID!
   muscularGroup: String!
   exercise: String!
   weight: String!
   reps: String!
   series: String
+  author: String!
 }

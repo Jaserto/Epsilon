@@ -1,0 +1,26 @@
+# Types
+type MuscularGroup implements Timestamps { 
+  id: ID!
+  name: String!
+  status: Boolean
+  author: ID!
+
+
+  # Interface required
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+# Inputs
+input MuscularGroupCreateInput {
+  name: String!
+  status: Boolean
+  author: String!
+}
+
+input MuscularGroupUpdateInput {
+  id: ID!
+  name: String!
+  status: Boolean
+  author: String!
+}
